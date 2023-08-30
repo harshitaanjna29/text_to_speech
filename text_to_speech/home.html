@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Nun - Minor2 </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Bootstrap CDN CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-0Mou2qXGeXK7k/Ue/a1hspEVcEP2zCpoQZw8/MPeUgISww+VmDJcy2ri9tX0a6iy" crossorigin="anonymous">
+
+    <!--button styling-->
+     <style>
+    .button {
+      background-color: #02454870;
+      color: white;
+      padding: 20px 28px;
+      font-size: 64px;
+      cursor: pointer;
+      text-align: justify;
+      border-radius: 15%;
+      position: absolute;
+      bottom: 10%;
+      right: 40%;
+    }
+  </style>
+
+</head>
+
+<body>
+
+    <div class="container"> <!--page container -->
+         <div class="text-box" contenteditable="true"></div> <!--text box which will contain spoken text -->
+         <!--i class="fa fa-microphone"></i--> <!-- microphone icon to be clicked before speaking -->
+    </div>
+    <div class="container-fluid align-center">
+        <img src="studie.jpeg" alt="Voice Note App Logo" width="90" height="90" style="float: left" />
+        <h1 >Study App</h1>
+        <hr>
+        <h3 class="no-browser-support">Sorry, Your Browser Doesn't Support the Web Speech API. Try Opening This Demo In Google Chrome.</h3>
+        <div class="app">
+            <div class="row">
+                <div class="col-md-6 align-center">
+                    <h3>Add New Voice Note</h3>
+                    <div class="input-single">
+                        <textarea id="note-textarea" placeholder="Create a new note by typing or using voice recognition." rows="6"></textarea>
+                    </div>
+                    <button id="start-record-btn" class="btn-success" title="Start Recording">Start Recognition</button>
+                    <button id="pause-record-btn" class="btn-warning" title="Pause Recording">Pause Recognition</button>
+                    <button id="save-note-btn" class="btn-info" title="Save Note">Save Note</button>
+                    <p id="recording-instructions">Press the
+                        <strong>Start Recognition</strong> button and allow access.</p>
+                </div>
+                <div class="col-md-6 align-center">
+                    <h3>My Voice Notes</h3>
+                    <ul id="notes">
+                        <li>
+                            <p class="no-notes">You don't have any notes.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer">
+        <div class="clearfix1">
+            <div class="container">
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/static/jscript.js"></script>
+
+    <form action="search.html">
+    <button type="submit" class="button">SEARCH</button>
+  </form>
+
+</body>
+
+</html>
